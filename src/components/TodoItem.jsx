@@ -22,7 +22,11 @@ const TodoItem = ({todoitem, markedCompleted, deleteThisTodo, update}) => {
     
     const title = prompt("Enter New Title")
     
-    update(title,todoitem.id)
+    if(title.length > 2){
+      
+      update(title,todoitem.id)
+
+    }
 
   }
 

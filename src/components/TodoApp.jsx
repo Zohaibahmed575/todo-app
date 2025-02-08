@@ -6,8 +6,7 @@ import { PiEmptyBold } from "react-icons/pi";
 
 const TodoApp = () => {
   
-  
-  
+    
  const [todoitems, settodoitems] = useState([])
 
  const [newtodo, setnewtodo] = useState("")
@@ -72,7 +71,7 @@ const updateArr = todoitems.map((item) => {
 
   
     return (
-      <div className="  h-[100vh]" >
+      <div className=" px-2  h-[100vh]" >
 
     <div className="flex items-center justify-center h-[50vh]">
 <div className=" bg-[#111111c4] rounded-2xl border-[grey]-2px md:w-[50vw] not-xl:w-full m-auto text-white p-5">
