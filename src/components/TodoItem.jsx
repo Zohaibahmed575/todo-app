@@ -34,7 +34,7 @@ const TodoItem = ({todoitem, markedCompleted, deleteThisTodo, update}) => {
     <div>
 
 
-<div className={`flex p-2 bg-[#7070707c] items-center justify-between rounded-[10px] border-1 ${todoitem.completed ? "shadow-[0px_0px_5px_5px_white]" : null} `}>
+<div className={`flex p-2 bg-[#7070707c] items-center justify-between transition-all duration-500 rounded-[10px] border-1 ${todoitem.completed ? "shadow-[0px_0px_5px_5px_white] transition-all duration-500" : null} `}>
 <h2 className="text-amber-50 font-bold text-2xl">{todoitem?.title}</h2>
 <div className="flex gap-3 items-center py-0" >
   {todoitem.completed ? <IoMdCheckbox color="white" size={25} onClick={() => {markedCompleted(todoitem.id)}}/>: <MdCheckBoxOutlineBlank color="white" size={25} onClick={() => {markedCompleted(todoitem.id)}}/>}
